@@ -1,6 +1,6 @@
 ## Create a virtual environment
 
-```bash
+```shell
 python -m venv .venv
 ```
 
@@ -52,6 +52,7 @@ For this application, you’re testing *sum()*. There are many behaviors in sum(
 - What happens when one of the values is negative?
 
 Example:
+
 ```python
 import unittest
 
@@ -69,4 +70,25 @@ class TestSum(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+```
+
+## Executing Test Runners
+
+The Python application that executes your test code, checks the assertions, and gives you test results in your console is called the **test runner**. For example, at the bottom of *test.py*, this small snippet of code:
+
+```python
+if __name__ == '__main__':
+    unittest.main()
+```
+
+To execute the unittest test runner, we can use:
+
+```shell
+python test.py
+```
+
+or,
+
+```shell
+python -m unittest test
 ```
