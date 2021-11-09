@@ -92,3 +92,16 @@ or,
 ```shell
 python -m unittest test
 ```
+
+## More Advanced Testing Scenarios
+Before you step into creating tests for your application, remember the three basic steps of every test:
+
+1. Create your inputs
+2. Execute the code, capturing the output
+3. Compare the output with an expected result
+
+It’s not always as easy as creating a static value for the input like a string or a number. Sometimes, your application will require an instance of a class or a context. What do you do then?
+
+The data that you create as an input is known as a **fixture**. It’s common practice to create fixtures and reuse them.
+
+If you’re running the same test and passing different values each time and expecting the same result, this is known as **parameterization**.
